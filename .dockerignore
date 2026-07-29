@@ -1,0 +1,10 @@
+.claude
+.git
+.gitignore
+.vercel
+.next
+images
+notes
+node_modules
+projects-intake.md
+public/projects/README.md
