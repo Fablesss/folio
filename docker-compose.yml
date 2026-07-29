@@ -6,3 +6,11 @@ services:
     restart: unless-stopped
     environment:
       - NODE_ENV=production
+      - HOSTNAME=0.0.0.0
+      - PORT=${APP_PORT}
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://127.0.0.1:${APP_PORT}/"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
