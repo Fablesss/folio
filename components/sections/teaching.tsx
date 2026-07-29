@@ -11,7 +11,7 @@ export function Teaching() {
     <Section id="teaching">
       <Reveal>
         <SectionHeading
-          eyebrow="03"
+          eyebrow="04"
           title={t.teaching.heading}
           subtitle={t.teaching.subheading}
         />

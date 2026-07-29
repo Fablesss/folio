@@ -21,9 +21,13 @@ export function Contact() {
             <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
               {t.contact.heading}
             </h2>
-            <p className="mt-4 max-w-xl text-lg leading-relaxed text-muted">
-              {t.contact.text}
-            </p>
+            <span className="mt-6 inline-flex items-center gap-2 rounded-full border border-border bg-surface px-3 py-1 text-sm text-muted">
+              <span className="relative flex h-2 w-2">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-60" />
+                <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
+              </span>
+              {t.hero.availability}
+            </span>
 
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <a
@@ -45,9 +49,6 @@ export function Contact() {
               ))}
             </div>
 
-            <p className="mt-8 border-t border-border pt-6 text-sm text-subtle">
-              {t.contact.note}
-            </p>
           </div>
         </Reveal>
       </Container>

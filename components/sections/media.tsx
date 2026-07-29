@@ -18,7 +18,7 @@ export function Media() {
     <Section id="media">
       <Reveal>
         <SectionHeading
-          eyebrow="04"
+          eyebrow="05"
           title={t.media.heading}
           subtitle={t.media.subheading}
         />

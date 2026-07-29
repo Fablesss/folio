@@ -167,7 +167,7 @@ const ru: SiteContent = {
       "В автоматизацию я пришёл со стороны бизнеса: учился на логистике (красный диплом РАНХиГС), управлял международными проектами в Nestlé. Поэтому язык бизнес-заказчика для меня родной, а перевести его задачу в работающую систему — то, что я делаю естественно.",
     ],
     portrait: {
-      src: "/photos/portrait-about.jpg",
+      src: "/photos/portrait-hero-neutral.png",
       alt: "Денис Мокринский",
     },
   },
@@ -513,6 +513,10 @@ const ru: SiteContent = {
         title: "Продукт и домен",
         items: ["HR-tech", "Внутренние инструменты", "UX/UI", "Финтех", "POS-кредитование"],
       },
+      {
+        title: "Языки",
+        items: ["Английский язык — B2"],
+      },
     ],
   },
   education: {
@@ -556,9 +560,9 @@ const ru: SiteContent = {
         text: "Вода — способ выключить голову. Летом это сапборд на подмосковных озёрах, круглый год — бассейн.",
         images: [
           {
-            src: "/photos/photo_2024-07-14_10-04-23.jpg",
-            alt: "Я на сапборде посреди озера с веслом в руках",
-            focus: "50% 0%",
+            src: "/photos/sup-lake-board.jpg",
+            alt: "Вид с сапборда на озеро",
+            focus: "50% 68%",
           },
         ],
       },
@@ -575,7 +579,7 @@ const ru: SiteContent = {
       },
       {
         title: "Сквош",
-        text: "Динамичный спорт, в котором я впервые за полгода регулярных тренировок почувствовал прогресс.",
+        text: "Регулярно играю в сквош: мне нравится сочетание скорости, тактики и полной концентрации в каждом розыгрыше.",
         images: [
           {
             src: "/photos/photo_2024-06-10_12-33-44.jpg",
@@ -648,7 +652,7 @@ const en: SiteContent = {
       "I came into automation from the business side: I studied logistics (BSc with honours from RANEPA) and ran international projects at Nestlé. So the language of a business stakeholder is native to me, and turning their problem into a working system is something I do naturally.",
     ],
     portrait: {
-      src: "/photos/portrait-about.jpg",
+      src: "/photos/portrait-hero-neutral.png",
       alt: "Denis Mokrinsky",
     },
   },
@@ -994,6 +998,10 @@ const en: SiteContent = {
         title: "Product & domain",
         items: ["HR-tech", "Internal tools", "UX/UI", "Fintech", "POS lending"],
       },
+      {
+        title: "Languages",
+        items: ["English — B2"],
+      },
     ],
   },
   education: {
@@ -1037,9 +1045,9 @@ const en: SiteContent = {
         text: "Water is how I switch my head off. A paddleboard on the lakes near Moscow in summer, the pool all year round.",
         images: [
           {
-            src: "/photos/photo_2024-07-14_10-04-23.jpg",
-            alt: "Me on a paddleboard in the middle of a lake, paddle in hand",
-            focus: "50% 0%",
+            src: "/photos/sup-lake-board.jpg",
+            alt: "View of the lake from a paddleboard",
+            focus: "50% 68%",
           },
         ],
       },

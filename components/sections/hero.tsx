@@ -20,22 +20,13 @@ export function Hero() {
 
       <Container className="relative py-24 sm:py-32">
         {/*
-          Two arrangements of the same three blocks. Narrow: the name spans both
-          columns, the pitch and the buttons sit to the left of the portrait.
-          From md up: name, pitch and buttons stack in the left column and the
-          portrait takes the right one across both rows.
+          On phones, the portrait sits between the heading and the pitch. From
+          md, the heading spans the full width while the pitch and portrait
+          share the next row. From lg, the portrait spans both text rows.
         */}
-        <div className="grid grid-cols-[1fr_6.5rem] items-start gap-x-5 gap-y-8 sm:grid-cols-[1fr_10rem] sm:gap-x-8 md:grid-cols-[1.4fr_0.6fr] md:gap-x-16">
-          <div className="rise col-span-2 min-w-0 md:col-span-1 md:col-start-1 md:row-start-1">
-            <span className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-3 py-1 text-sm text-muted">
-              <span className="relative flex h-2 w-2">
-                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-60" />
-                <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
-              </span>
-              {t.hero.availability}
-            </span>
-
-            <h1 className="mt-7 text-5xl font-semibold tracking-tight sm:text-7xl">
+        <div className="grid grid-cols-1 items-start gap-x-5 gap-y-8 md:grid-cols-[1fr_16rem] md:gap-x-12 lg:grid-cols-[1.4fr_0.6fr] lg:gap-x-16">
+          <div className="rise min-w-0 md:col-span-2 md:row-start-1 lg:col-span-1 lg:col-start-1">
+            <h1 className="text-5xl font-semibold tracking-tight sm:text-7xl">
               {t.hero.name}
             </h1>
 
@@ -44,7 +35,7 @@ export function Hero() {
             </p>
           </div>
 
-          <div className="rise min-w-0 md:col-start-1 md:row-start-2">
+          <div className="rise min-w-0 row-start-3 md:col-start-1 md:row-start-2 lg:row-start-2">
             <p className="max-w-2xl text-base leading-relaxed text-muted sm:text-lg lg:text-xl">
               {t.hero.tagline}
             </p>
@@ -65,7 +56,7 @@ export function Hero() {
             </div>
           </div>
 
-          <div className="rise self-center md:col-start-2 md:row-span-2 md:row-start-1">
+          <div className="rise row-start-2 w-full max-w-64 justify-self-center self-center md:col-start-2 md:row-start-2 md:max-w-none lg:row-span-2 lg:row-start-1">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={t.hero.portrait.src}

@@ -75,7 +75,7 @@ export function Projects() {
     <Section id="projects">
       <Reveal>
         <SectionHeading
-          eyebrow="05"
+          eyebrow="03"
           title={t.projects.heading}
           subtitle={t.projects.subheading}
         />
