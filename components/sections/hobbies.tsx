@@ -43,7 +43,7 @@ export function Hobbies() {
                 ))}
               </div>
               <div className="flex flex-1 flex-col p-6">
-                <h3 className="text-base font-semibold tracking-tight">
+                <h3 className="text-base font-semibold">
                   {item.title}
                 </h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted">

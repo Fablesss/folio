@@ -5,7 +5,30 @@ import { Section, SectionHeading } from "@/components/ui";
 import { Reveal } from "@/components/reveal";
 import type { ProjectItem } from "@/content/site";
 
+function getCompanyLogo(role: string) {
+  const normalizedRole = role.toLowerCase();
+
+  if (
+    normalizedRole.includes("зерокодер") ||
+    normalizedRole.includes("zerocoder")
+  ) {
+    return "/logos/zerocoder.png";
+  }
+
+  if (normalizedRole.includes("salmon")) {
+    return "/logos/salmon.png";
+  }
+
+  if (normalizedRole.includes("nestlé") || normalizedRole.includes("nestle")) {
+    return "/logos/nestle.png";
+  }
+
+  return null;
+}
+
 function ProjectCard({ project }: { project: ProjectItem }) {
+  const companyLogo = getCompanyLogo(project.role);
+
   return (
     <article className="flex h-full flex-col rounded-card border border-border bg-surface p-6 transition-colors hover:border-border-strong">
       {project.image ? (
@@ -26,10 +49,22 @@ function ProjectCard({ project }: { project: ProjectItem }) {
         </a>
       ) : null}
 
-      <p className="font-mono text-xs uppercase tracking-[0.15em] text-subtle">
-        {project.role}
-      </p>
-      <h4 className="mt-3 text-lg font-semibold tracking-tight">
+      <div className="flex min-h-6 items-center gap-2">
+        {companyLogo ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            src={companyLogo}
+            alt=""
+            aria-hidden="true"
+            loading="lazy"
+            className="h-6 w-6 shrink-0 rounded-md object-contain"
+          />
+        ) : null}
+        <p className="font-mono text-xs uppercase text-subtle">
+          {project.role}
+        </p>
+      </div>
+      <h4 className="mt-3 text-lg font-semibold leading-snug">
         {project.title}
       </h4>
       <p className="mt-2 text-sm leading-relaxed text-muted">
@@ -84,11 +119,11 @@ export function Projects() {
       {t.projects.groups.map((group, gi) => (
         <div key={group.title} className={gi === 0 ? "mt-12" : "mt-16"}>
           <Reveal>
-            <h3 className="mb-6 text-sm font-semibold uppercase tracking-[0.12em] text-subtle">
+            <h3 className="mb-6 text-sm font-semibold uppercase text-subtle">
               {group.title}
             </h3>
           </Reveal>
-          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-flow-dense gap-4 md:grid-cols-2 lg:grid-cols-3">
             {group.items.map((project, i) => (
               <Reveal
                 key={project.title}

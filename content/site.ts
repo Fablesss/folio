@@ -160,11 +160,11 @@ const ru: SiteContent = {
   },
   about: {
     heading: "Обо мне",
-    lead: "Я — мост между бизнесом и автоматизацией: собираю процесс из слов заказчика и довожу его до работающей системы.",
+    lead: "Разбираю бизнес-процессы, проектирую автоматизацию и внедряю решения.",
     paragraphs: [
-      "Как аналитик я умею разложить любой ручной процесс на триггеры, шаги и данные, а как разработчик — тут же собрать его в работающий workflow. Это моя основная сила: я не передаю задачу «через стену», а довожу до внедрения в бизнес-процессы.",
-      "Low-code — это не подработка, а мой основной домен: я был CTO Зерокодера и руководил командой low-code разработки, то есть отвечал не только за свои решения, но и за стандарты, ревью и передачу экспертизы другим. В финтехе (Salmon / FHL) я приходил в low-code команду на самом старте компании — там пришлось самому определять, как выглядит «хорошо».",
-      "В автоматизацию я пришёл со стороны бизнеса: учился на логистике (красный диплом РАНХиГС), управлял международными проектами в Nestlé. Поэтому язык бизнес-заказчика для меня родной, а перевести его задачу в работающую систему — то, что я делаю естественно.",
+      "Для меня автоматизация — это инструмент для достижения бизнес-целей. Я отвечаю не только за разработку, но и за то, чтобы созданная система стала частью рабочих процессов и давала качественный и измеримый результат.",
+      "Low-code — мой основной профессиональный домен. В роли CTO Зерокодера я руководил командой low-code разработки и отвечал не только за свои решения, но и за стандарты, ревью и передачу экспертизы другим. В финтехе (Salmon / FHL) я присоединился к low-code команде на старте компании и создавал первые B2B-продукты, которые помогли быстрее запустить бизнес.",
+      "В разработку я пришёл со стороны бизнеса: учился на логистике (красный диплом РАНХиГС), управлял международными проектами в Nestlé. Этот опыт помогает мне понимать бизнес-задачи и превращать их в работающие системы.",
     ],
     portrait: {
       src: "/photos/portrait-hero-neutral.png",
@@ -206,7 +206,7 @@ const ru: SiteContent = {
         period: "декабрь 2022 — апрель 2023",
         location: "Финтех · POS-кредитование, Филиппины",
         bullets: [
-          "Входил в команду low-code разработки на самом старте компании: строил внутренние и клиентские продукты в условиях неопределённости и высокой скорости.",
+          "Входил в команду low-code разработки на самом старте компании: строил внутренние и клиентские продукты для быстрорастущего стартапа. Работал в тесной связке с основной командой разработки и дизайнерами.",
           "Собрал B2B-админку аналитики кредитного портфеля: интерфейс на Bubble поверх PostgreSQL через слой Hasura + GraphQL.",
           "Интегрировал внешние системы по API: Auth0 (SSO) и скоринговый сервис для мобильного приложения по рассрочке.",
         ],
@@ -345,7 +345,7 @@ const ru: SiteContent = {
   projects: {
     heading: "Проекты и автоматизации",
     subheading:
-      "Кейсы, где я сам довёл идею до работающего инструмента — от разбора процесса до задеплоенной автоматизации.",
+      "Кейсы, где я сам довёл идею до работающего решения — от разбора задачи до внедрения.",
     groups: [
       {
         title: "Рабочие проекты",
@@ -364,7 +364,7 @@ const ru: SiteContent = {
           "Внутренний инструмент: входящие заявки автоматически распределяются между сотрудниками с учётом текущей загрузки. Убрал ручную маршрутизацию и перекос, когда одни перегружены, а другие простаивают.",
         role: "CTO · Зерокодер",
         stack: ["Low-code", "Правила маршрутизации", "REST API"],
-        result: "В составе того же внутреннего суперприложения — 250 пользователей.",
+        result: "В составе внутреннего суперприложения — 250 пользователей. Через систему прошло более 150 000 заказов.",
       },
       {
         title: "Автоматизация клиентской поддержки",
@@ -410,7 +410,7 @@ const ru: SiteContent = {
           {
             title: "Databaser — менеджер баз данных",
             description:
-              "Десктопное приложение для работы с базами: SQL-редактор с автокомплитом по схеме, виртуализированная сетка результатов, визуализация плана запроса графом и SSH-туннели. Поддерживает PostgreSQL, MySQL и SQLite. Архитектуру проектировал сам, реализацию вёл с AI.",
+              "Десктопное приложение для работы с базами: SQL-редактор с автокомплитом по схеме, виртуализированная сетка результатов, визуализация плана запроса графом и SSH-туннели. Поддерживает PostgreSQL, MySQL и SQLite.",
             role: "Личный проект · AI-assisted",
             stack: [
               "Tauri 2 (Rust)",
@@ -429,7 +429,7 @@ const ru: SiteContent = {
           {
             title: "IDE для агентной разработки",
             description:
-              "Среда для создания и запуска AI-агентов. Архитектуру проектировал сам, реализацию вёл с AI.",
+              "Среда для создания и запуска AI-агентов.",
             role: "Личный проект · AI-assisted",
             stack: ["AI-агенты", "AI-assisted"],
             image: {
@@ -645,11 +645,11 @@ const en: SiteContent = {
   },
   about: {
     heading: "About",
-    lead: "I’m the bridge between business and automation: I turn a stakeholder’s words into a process, and the process into a working system.",
+    lead: "I analyse business processes, design automation and implement solutions.",
     paragraphs: [
-      "As an analyst I can break any manual process down into triggers, steps and data — and as an engineer I can immediately build it into a working workflow. That’s my core strength: I don’t throw tasks over the wall, I take them all the way into the business process.",
-      "Low-code isn’t a side skill for me, it’s my core domain: I was CTO of Zerocoder and led a low-code engineering team, so I owned not just my own solutions but the standards, the reviews and the handover of expertise. In fintech (Salmon / FHL) I joined the low-code team in the company’s earliest days, where you have to define what “good” looks like yourself.",
-      "I came into automation from the business side: I studied logistics (BSc with honours from RANEPA) and ran international projects at Nestlé. So the language of a business stakeholder is native to me, and turning their problem into a working system is something I do naturally.",
+      "For me, automation is a tool for achieving business goals. I take responsibility not only for development, but also for making sure what I build becomes part of day-to-day operations and delivers high-quality, measurable results.",
+      "Low-code is my core professional domain. As CTO at Zerocoder, I led a low-code engineering team and owned not only my own solutions, but also standards, reviews and knowledge sharing. In fintech (Salmon / FHL), I joined the low-code team at the company’s earliest stage and built its first B2B products, helping the business launch faster.",
+      "I came into development from the business side: I studied logistics (BSc with honours from RANEPA) and ran international projects at Nestlé. This experience helps me understand business needs and turn them into working systems.",
     ],
     portrait: {
       src: "/photos/portrait-hero-neutral.png",
@@ -691,7 +691,7 @@ const en: SiteContent = {
         period: "Dec 2022 — Apr 2023",
         location: "Fintech · POS lending, Philippines",
         bullets: [
-          "Part of the low-code engineering team from day one: built internal and customer-facing products at speed and under real ambiguity.",
+          "Part of the low-code engineering team from day one: built internal and customer-facing products for a fast-growing startup, working closely with the core engineering team and designers.",
           "Built a B2B admin panel for loan-portfolio analytics: a Bubble interface on top of PostgreSQL via a Hasura + GraphQL layer.",
           "Integrated external systems over APIs: Auth0 (SSO) and a scoring provider for the instalment-payments mobile app.",
         ],
@@ -830,7 +830,7 @@ const en: SiteContent = {
   projects: {
     heading: "Projects & automations",
     subheading:
-      "Cases where I took an idea all the way to a working tool — from mapping the process to deployed automation.",
+      "Cases where I took an idea all the way to a working solution — from understanding the task to implementation.",
     groups: [
       {
         title: "Work projects",
@@ -849,7 +849,7 @@ const en: SiteContent = {
           "Internal tool: incoming requests are distributed across the team automatically, weighted by each person’s current load. Removed manual routing and the imbalance where some people were swamped while others idled.",
         role: "CTO · Zerocoder",
         stack: ["Low-code", "Routing rules", "REST API"],
-        result: "Part of the same internal super-app — 250 users.",
+        result: "Part of the internal super-app — 250 users. More than 150,000 orders processed through the system.",
       },
       {
         title: "Customer support automation",
@@ -895,7 +895,7 @@ const en: SiteContent = {
           {
             title: "Databaser — database manager",
             description:
-              "A desktop client for working with databases: a SQL editor with schema-aware autocomplete, a virtualised result grid, query-plan visualisation as a graph and SSH tunnelling. Supports PostgreSQL, MySQL and SQLite. I designed the architecture and drove the implementation with AI.",
+              "A desktop client for working with databases: a SQL editor with schema-aware autocomplete, a virtualised result grid, query-plan visualisation as a graph and SSH tunnelling. Supports PostgreSQL, MySQL and SQLite.",
             role: "Personal project · AI-assisted",
             stack: [
               "Tauri 2 (Rust)",
@@ -914,7 +914,7 @@ const en: SiteContent = {
           {
             title: "IDE for agentic development",
             description:
-              "An environment for building and running AI agents. I designed the architecture and drove the implementation with AI.",
+              "An environment for building and running AI agents.",
             role: "Personal project · AI-assisted",
             stack: ["AI agents", "AI-assisted"],
             image: {

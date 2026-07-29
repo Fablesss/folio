@@ -15,19 +15,15 @@ export function Contact() {
       <Container>
         <Reveal>
           <div className="rounded-card border border-border bg-surface p-8 sm:p-12">
-            <p className="font-mono text-xs uppercase tracking-[0.2em] text-accent">
+            <p className="font-mono text-xs uppercase text-accent">
               09
             </p>
-            <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
+            <h2 className="mt-3 text-3xl font-semibold sm:text-4xl">
               {t.contact.heading}
             </h2>
-            <span className="mt-6 inline-flex items-center gap-2 rounded-full border border-border bg-surface px-3 py-1 text-sm text-muted">
-              <span className="relative flex h-2 w-2">
-                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-60" />
-                <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
-              </span>
+            <p className="mt-6 text-sm text-muted">
               {t.hero.availability}
-            </span>
+            </p>
 
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <a

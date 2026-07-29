@@ -21,7 +21,7 @@ export function Skills() {
         {t.skills.groups.map((group, i) => (
           <Reveal key={group.title} delay={i * 60}>
             <div>
-              <h3 className="text-sm font-semibold uppercase tracking-[0.12em] text-subtle">
+              <h3 className="text-sm font-semibold uppercase text-subtle">
                 {group.title}
               </h3>
               <div className="mt-4 flex flex-wrap gap-2">

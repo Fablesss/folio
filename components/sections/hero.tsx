@@ -26,7 +26,7 @@ export function Hero() {
         */}
         <div className="grid grid-cols-1 items-start gap-x-5 gap-y-8 md:grid-cols-[1fr_16rem] md:gap-x-12 lg:grid-cols-[1.4fr_0.6fr] lg:gap-x-16">
           <div className="rise min-w-0 md:col-span-2 md:row-start-1 lg:col-span-1 lg:col-start-1">
-            <h1 className="text-5xl font-semibold tracking-tight sm:text-7xl">
+            <h1 className="text-5xl font-semibold sm:text-7xl">
               {t.hero.name}
             </h1>
 
@@ -71,7 +71,7 @@ export function Hero() {
         <dl className="mt-16 grid grid-cols-2 gap-x-6 gap-y-8 border-t border-border pt-10 sm:grid-cols-4">
           {t.hero.highlights.map((h) => (
             <div key={h.label}>
-              <dt className="text-2xl font-semibold tracking-tight">
+              <dt className="text-2xl font-semibold">
                 {h.value}
               </dt>
               <dd className="mt-1 text-sm text-subtle">{h.label}</dd>

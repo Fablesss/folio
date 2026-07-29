@@ -22,7 +22,7 @@ export function Teaching() {
           <Reveal key={`${item.org}-${item.course}`} delay={i * 60}>
             <li className="flex flex-col gap-1 py-5 sm:flex-row sm:items-baseline sm:justify-between sm:gap-8">
               <div className="flex items-baseline gap-3">
-                <span className="text-base font-semibold tracking-tight">
+                <span className="text-base font-semibold">
                   {item.course}
                 </span>
                 {item.note ? (

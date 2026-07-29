@@ -98,7 +98,7 @@ export function SiteHeader() {
       }`}
     >
       <Container className="flex h-16 items-center justify-between gap-4">
-        <a href="#top" className="font-semibold tracking-tight">
+        <a href="#top" className="font-semibold">
           {t.hero.name}
         </a>
 

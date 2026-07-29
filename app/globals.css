@@ -34,7 +34,6 @@ body {
   background-color: var(--color-bg);
   color: var(--color-fg);
   font-family: var(--font-sans);
-  letter-spacing: -0.011em;
 }
 
 ::selection {

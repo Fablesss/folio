@@ -18,7 +18,7 @@ export function Experience() {
           <Reveal key={`${item.company}-${i}`} delay={i * 70}>
             <article className="grid gap-5 rounded-card border border-border bg-surface p-6 sm:grid-cols-[0.9fr_2fr] sm:gap-8 sm:p-8">
               <header>
-                <h3 className="flex items-center gap-2.5 text-lg font-semibold tracking-tight">
+                <h3 className="flex items-center gap-2.5 text-lg font-semibold">
                   {item.logo ? (
                     /* eslint-disable-next-line @next/next/no-img-element */
                     <img

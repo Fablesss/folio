@@ -37,23 +37,27 @@ export function SectionHeading({
   eyebrow,
   title,
   subtitle,
+  subtitleClassName = "leading-snug",
 }: {
   eyebrow?: string;
   title: string;
   subtitle?: string;
+  subtitleClassName?: string;
 }) {
   return (
     <div className="max-w-2xl">
       {eyebrow ? (
-        <p className="mb-3 font-mono text-xs uppercase tracking-[0.2em] text-accent">
+        <p className="mb-3 font-mono text-xs uppercase text-accent">
           {eyebrow}
         </p>
       ) : null}
-      <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
+      <h2 className="text-3xl font-semibold sm:text-4xl">
         {title}
       </h2>
       {subtitle ? (
-        <p className="mt-4 text-lg leading-relaxed text-subtle">{subtitle}</p>
+        <p className={`mt-4 text-lg text-subtle ${subtitleClassName}`}>
+          {subtitle}
+        </p>
       ) : null}
     </div>
   );
