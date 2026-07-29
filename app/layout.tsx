@@ -14,7 +14,6 @@ export const metadata: Metadata = {
   title: "Denis Mokrinsky — Low-Code Engineer · Business & Systems Analyst",
   description:
     "I turn business processes into deployed automation: low-code/no-code, JavaScript, REST/webhook integrations. The bridge between business and engineering.",
-  metadataBase: new URL("https://example.com"),
   openGraph: {
     title: "Denis Mokrinsky — Low-Code Engineer",
     description:
